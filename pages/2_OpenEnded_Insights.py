@@ -13,7 +13,7 @@ df=st.session_state["df"]
 
 stop={"the","and","to","of","a","is","it","in","for","on","my","i","was","very","with","that"}
 
-for col in ["Q22","Q23","Q24"]:
+for col in ["Q4","Q22","Q23","Q24"]:
 
     if col not in df.columns:
         continue
