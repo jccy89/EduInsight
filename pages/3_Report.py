@@ -216,6 +216,18 @@ pdf_buffer = create_pdf(
 
 )
 
+st.download_button(
+
+    label="📥 Download Executive Report (PDF)",
+
+    data=pdf_buffer.getvalue(),
+
+    file_name="Educational_Visit_Analytics_Report.pdf",
+
+    mime="application/pdf"
+
+)
+
 st.divider()
 
 st.success(
