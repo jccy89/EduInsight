@@ -327,7 +327,7 @@ if uploaded:
 
     # Font size for the counts above each bar
     fig.update_traces(
-        textposition="outside",
+        textposition="inside",
         textfont=dict(size=18)      # Count font size
     )
 
