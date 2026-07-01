@@ -325,12 +325,28 @@ if uploaded:
 
     )
 
+    # Font size for the counts above each bar
+    fig.update_traces(
+        textposition="outside",
+        textfont=dict(size=18)      # Count font size
+    )
+
     fig.update_layout(
 
         xaxis=dict(
 
-            tickmode="linear"
+            tickmode="linear",
 
+            title_font=dict(size=18),
+
+            tickfont=dict(size=16)
+
+        ),
+
+        yaxis=dict(
+            title_font=dict(size=18),
+
+            tickfont=dict(size=16)
         )
 
     )
