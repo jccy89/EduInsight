@@ -218,7 +218,7 @@ pdf_buffer = create_pdf(
 
 st.download_button(
 
-    label="📥 Download Executive Report (PDF)",
+    label="📥 Download Summary Report (PDF)",
 
     data=pdf_buffer.getvalue(),
 
