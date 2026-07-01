@@ -252,7 +252,22 @@ if uploaded:
 
     fig.update_traces(
         texttemplate="%{text:.2f}",
-        textposition="outside"
+        textposition="outside",
+        textfont=dict(size=18)
+    )
+
+    # Font sizes for axes
+    fig.update_layout(
+        xaxis_title="Learning Dimension",
+        yaxis_title="Average Score",
+        xaxis=dict(
+            title_font=dict(size=18),   # X-axis title
+            tickfont=dict(size=14)      # X-axis labels
+        ),
+        yaxis=dict(
+            title_font=dict(size=18),   # Y-axis title
+            tickfont=dict(size=14)      # Y-axis labels
+        )
     )
 
     st.plotly_chart(
